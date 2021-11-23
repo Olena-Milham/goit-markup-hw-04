@@ -170,9 +170,6 @@ p {
 .header-contacts-list {
   display: flex;
 }
-.header-contacts + .header-contacts {
-  margin-left: 12px;
-}
 
 .header-contacts {
   padding-top: 32px;
@@ -183,16 +180,10 @@ p {
 }
 
 .header-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
   fill: currentColor;
-}
-/* .header-icon:hover,
-.header-icon:focus {
-  fill: var(--main-accent-color);
-} */
-
-.header-contacts:hover,
-.header-contacts:focus {
-  color: var(--main-accent-color);
 }
 
 /* ----------------------------------------------------Footer----------------------------------------------- */
