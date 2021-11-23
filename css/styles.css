@@ -178,6 +178,22 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.header-contacts + .header-contacts {
+  margin-left: var(--project-item-gap);
+}
+
+.header-icon {
+  fill: currentColor;
+}
+/* .header-icon:hover,
+.header-icon:focus {
+  fill: var(--main-accent-color);
+} */
+
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--main-accent-color);
+}
 
 /* ----------------------------------------------------Footer----------------------------------------------- */
 .footer {
@@ -371,6 +387,15 @@ p {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--footer-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/decore/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   text-align: center;
 }
 .order-service-title {
