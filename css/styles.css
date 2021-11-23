@@ -318,6 +318,7 @@ p {
 .filters-btn:active {
   color: var(--main-title-color);
   background-color: var(--second-button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .filters {
@@ -345,6 +346,11 @@ p {
   margin-left: var(--project-item-gap);
   margin-top: var(--project-item-gap);
   outline: 1px solid var(--card-border-color);
+  background-color: var(--secondary-background-color);
+}
+.projects-item:hover,
+.projects-item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .projects-title {
   margin-top: 0;
@@ -368,9 +374,7 @@ p {
 .projects-content {
   padding: 20px 24px;
 }
-.projects-item {
-  background-color: var(--secondary-background-color);
-}
+
 /* -----------------------------------------------Main WEB STUDIO ------------------------------------------- */
 /* -----------------------------Heroe/ Banner/ order a service ------------------------------------------------ */
 
@@ -494,6 +498,7 @@ p {
 .team-card {
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .team-item {
   background-color: var(--secondary-background-color);
