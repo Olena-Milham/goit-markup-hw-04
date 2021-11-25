@@ -237,8 +237,7 @@ p {
 /* --------------- */
 .footer-links {
   display: flex;
-  align-items: center;
-  justify-content: baseline;
+  align-items: baseline;
 }
 
 .footer-address {
