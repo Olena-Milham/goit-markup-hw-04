@@ -95,7 +95,6 @@ p {
 .nav-holder {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-navigation {
@@ -169,11 +168,14 @@ p {
 
 .header-contacts-list {
   display: flex;
+  margin-left: auto;
 }
 
 .header-contacts {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  display: flex;
+  align-items: center;
 }
 .header-contacts + .header-contacts {
   margin-left: var(--project-item-gap);
@@ -235,6 +237,8 @@ p {
 /* --------------- */
 .footer-links {
   display: flex;
+  align-items: center;
+  justify-content: baseline;
 }
 
 .footer-address {
@@ -252,7 +256,7 @@ p {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
-  padding-top: 12px;
+  /* padding-top: 12px; */
 }
 .footer-social-title {
   margin-bottom: 20px;
@@ -462,17 +466,21 @@ p {
 .features-item-title {
   /* margin-top: 0; */
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
 }
 .features-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   background-color: var(--background-section);
+  border-radius: 4px;
   margin-bottom: 30px;
-  padding: 25px 100px;
 }
 
 /* -------------------------------------specialities----------- */
@@ -578,7 +586,8 @@ p {
 .clients-item {
   width: 170px;
   height: 92px;
-  outline: 1px solid var(--social-network-main-color);
+  border: 1px solid var(--social-network-main-color);
+  border-radius: 4px;
 }
 .clients-item + .clients-item {
   margin-left: var(--project-item-gap);
@@ -593,8 +602,12 @@ p {
 }
 .clients-link:hover,
 .clients-link:focus {
-  background-color: var(--main-accent-color);
-  color: var(--social-network-accent-color);
+  color: var(--main-accent-color);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--main-accent-color);
 }
 
 .clients-icon {
